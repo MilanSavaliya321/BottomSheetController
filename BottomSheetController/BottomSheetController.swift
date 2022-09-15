@@ -62,7 +62,7 @@ public class BottomSheetController: UIViewController {
     public init(contentViewController: UIViewController) {
         contentView = contentViewController.view
         self.contentViewController = contentViewController
-        super.init(nibName: "BottomSheetController", bundle: Bundle.module)
+        super.init(nibName: "BottomSheetController", bundle: nil)
         modalPresentationStyle = .overFullScreen
         modalTransitionStyle = .crossDissolve
     }
@@ -76,7 +76,7 @@ public class BottomSheetController: UIViewController {
     public init(contentView: UIView) {
         self.contentView = contentView
         self.contentViewController = nil
-        super.init(nibName: "BottomSheetController", bundle: Bundle.module)
+        super.init(nibName: "BottomSheetController", bundle: nil)
         modalPresentationStyle = .overFullScreen
         modalTransitionStyle = .crossDissolve
     }
